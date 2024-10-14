@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
@@ -6,34 +6,27 @@ body{
     height: 100%;
 }
 
-.formulario{
+.formulario, .formulario2 {
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     background: #09584A;
     border-radius: 10px;
 }
-    
-.formulario h1{
+
+.formulario h1, .formulario2 h1 {
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0 0 20px;
     border-bottom: 1px solid silver;
 }
 
-.formulario form{
+.formulario form, .formulario2 form {
     padding: 0 40px;
     box-sizing: border-box;
 }
 
-form .username{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-
-.username input{
+input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -43,7 +36,13 @@ form .username{
     outline: none;
 }
 
-.username label{
+div {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -54,7 +53,7 @@ form .username{
     transition: .5s;
 }
 
-.username span::before{
+span::before {
     content: '';
     position: absolute;
     top: 40px;
@@ -65,276 +64,12 @@ form .username{
     transition: .5s;
 }
 
-
-.username input:focus ~ label,
-.username input:focus ~ label{
+input:focus ~ label {
     top: -5px;
     color: black;
 }
 
-.username input:focus ~ span::before,
-.username input:focus ~ span::before{
+input:focus ~ span::before {
     width: 100%;
 }
-
-
-.formulario2{
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: #09584A;
-    border-radius: 10px;
-}
-    
-.formulario2{
-    text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid silver;
-}
-
-.formulario2 form{
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
-form .name{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-form .name{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-
-form .lastname{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-
-form .user{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-form .email{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-form .password{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-form .password2{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px 0;
-}
-form .continuar{
-    position:relative;
-    border-bottom: #adadad;
-    margin: 3% 5px;
-}
-form .cancelar{
-    position:relative;
-    border-bottom: #adadad;
-    margin: 5% 0;
-}
-.name input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.name label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-.name span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    transition: .5s;
-}
-.lastname input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.lastname label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-.lastname span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    transition: .5s;
-}
-.user input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.user label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-.user span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    transition: .5s;
-}
-.email input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.email label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-.email span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    transition: .5s;
-}
-.password input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.password label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-.password span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    transition: .5s;
-}
-.password2 input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.password2 label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-.password2 span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    transition: .5s;
-}
-.formulario2 input:focus ~ label,
-.formulario2 input:focus ~ label{
-    top: -5px;
-    color: black;
-}
-
-.formulario2 input:focus ~ span::before,
-.formulario2 input:focus ~ span::before{
-    width: 100%;
-}
-
 
