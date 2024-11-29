@@ -15,6 +15,14 @@ body {
     border-radius: 10px;
 }
 
+.formulario {
+    top: 40%; /* Ajusta la posición del primer formulario */
+}
+
+.formulario2 {
+    top: 150%; /* Ajusta la posición del segundo formulario */
+}
+
 .formulario h1, .formulario2 h1 {
     text-align: center;
     padding: 0 0 20px;
@@ -73,3 +81,107 @@ input:focus ~ span::before {
     width: 100%;
 }
 
+
+
+
+/* Para dispositivos con un ancho de pantalla máximo de 768px (tabletas y móviles en orientación vertical) */
+@media (max-width: 768px) {
+    .formulario, .formulario2 {
+        width: 90%;  /* Reduce el ancho de los formularios */
+        top: 20%; /* Ajusta la posición de los formularios */
+    }
+
+    .formulario h1, .formulario2 h1 {
+        font-size: 22px; /* Reduce el tamaño del texto del título */
+    }
+
+    .formulario form, .formulario2 form {
+        padding: 20px;  /* Reduce el padding de los formularios */
+    }
+
+    input {
+        height: 35px; /* Ajusta el tamaño de los inputs */
+        font-size: 14px; /* Reduce el tamaño de fuente de los inputs */
+    }
+
+    .configuracion {
+        width: 80%;  /* Reduce el ancho de la configuración */
+        padding: 15px;  /* Reduce el padding */
+    }
+
+    .configuracion h2 {
+        font-size: 22px; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .configuracion div {
+        margin-bottom: 10px;  /* Reduce el espacio entre los elementos */
+    }
+
+    .configuracion button {
+        font-size: 14px;  /* Reduce el tamaño de la fuente de los botones */
+    }
+
+    .formulario, .formulario2 {
+        width: 100%;  /* En dispositivos muy pequeños, los formularios ocuparán el 100% del ancho */
+    }
+
+    .recordar, .Registrarse, .cancelar, .continuar {
+        font-size: 14px; /* Reduce el tamaño de los textos en estos elementos */
+    }
+}
+
+/* Para dispositivos con un ancho de pantalla máximo de 480px (móviles más pequeños) */
+@media (max-width: 480px) {
+    .formulario, .formulario2 {
+        width: 100%;  /* Los formularios ocupan el 100% de la pantalla */
+        top: 10%; /* Ajusta la posición de los formularios */
+    }
+
+    .formulario h1, .formulario2 h1 {
+        font-size: 20px; /* Reduce aún más el tamaño del título */
+    }
+
+    .configuracion {
+        width: 100%;  /* Configuración ocupa el 100% de la pantalla */
+    }
+
+    .configuracion h2 {
+        font-size: 20px; /* Reduce el tamaño de la fuente del título */
+    }
+
+    input {
+        font-size: 12px; /* Reduce el tamaño de la fuente de los inputs */
+    }
+
+    .configuracion button {
+        font-size: 12px; /* Reduce el tamaño de los botones */
+    }
+
+    .cancelar, .continuar {
+        width: 100%; /* Los botones ocuparán todo el ancho disponible */
+        margin-top: 10px;  /* Añade un poco de margen entre los botones */
+    }
+}
+
+/* Para pantallas más grandes (de 1200px hacia arriba) */
+@media (min-width: 1200px) {
+    .formulario, .formulario2 {
+        width: 500px;  /* Amplía el ancho de los formularios en pantallas grandes */
+    }
+
+    .formulario h1, .formulario2 h1 {
+        font-size: 30px; /* Aumenta el tamaño de los títulos */
+    }
+
+    .configuracion {
+        width: 400px;  /* Aumenta el ancho de la sección de configuración */
+    }
+
+    .configuracion h2 {
+        font-size: 26px; /* Aumenta el tamaño de la fuente del título */
+    }
+
+    .configuracion button {
+        font-size: 18px; /* Aumenta el tamaño de los botones */
+    }
+}
